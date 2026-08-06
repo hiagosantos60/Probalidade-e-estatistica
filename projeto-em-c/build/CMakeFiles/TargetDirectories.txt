@@ -1,0 +1,3 @@
+C:/Users/Hiago/Documents/Probalidade-e-estatistica/projeto-em-c/build/CMakeFiles/projeto.dir
+C:/Users/Hiago/Documents/Probalidade-e-estatistica/projeto-em-c/build/CMakeFiles/edit_cache.dir
+C:/Users/Hiago/Documents/Probalidade-e-estatistica/projeto-em-c/build/CMakeFiles/rebuild_cache.dir

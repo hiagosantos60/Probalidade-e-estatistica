@@ -1,0 +1,91 @@
+# Documentação do python:
+# 
+
+""""
+81.) Alguns amigos estao em uma lanchonete. Sobre
+a mesa ha duas travessas. Em uma delas ha 3
+pasteis e 5 coxinhas. Na outra ha 2 coxinhas e 4
+pasteis. Se ao acaso alguem escolher uma destas
+travessas e tambem ao acaso pegar um dos salgados,
+qual a probabilidade de se ter pegado um pastel?
+
+147.) Antes de serem colocadas para distribuicao num
+caminhao, os pacotes devem passar por dois
+testes, no primeiro o peso nao deve exceder 18kg
+e no segundo a soma das tres dimensoes deve
+ser menor do que 2m. Da pratica diaria, sabe-se
+que 5% dos pacotes recebidos falham no primeiro
+teste e que 2% falham no segundo teste. Qual a
+probabilidade de um pacote que seja aceito no
+primeiro teste ser reprovado no segundo? Considere os
+testes independentes.
+
+224.) Uma medica que trata alergias afirma que 60%
+dos pacientes testados por ela sao alergicos a algum tipo
+de erva. Qual e a probabilidade de que:
+a.) exatamente tres de seus quatro proximos pacientes
+sejam alergicos a ervas?
+b.) nenhum de seus quatro proximos pacientes
+seja alergico a ervas?
+
+232.) Considere o paciente em estudo na questao 231,
+que foi testado positivamente para sarcoma, decidiu fazer um
+novo exame de toque, com outro medico especialista e
+experiente. Considere que o segundo medico nao tenha
+informacao previa nenhuma do quadro, de forma que os
+exames podem ser considerados independentes, e com a
+mesma sensibilidade e especificidade.
+
+Suponha que o resultado do segundo exame revele
+novamente a presenca de sarcoma nas celulas
+da prostata do paciente. Determine a probabilidade do
+paciente ter desenvolvido sarcoma, dada a
+evidencia obtida.
+
+236.) Uma construtora emprega dois engenheiros de
+vendas. Um engenheiro realiza o trabalho de
+estimar os custos para 70% das ofertas de trabalho da
+empresa. O segundo engenheiro faz o trabalho para
+30% das ofertas. Sabe-se que o indice de erros no
+trabalho do engenheiro 1 e de 0,02 e do engenheiro 2
+e de 0,04. Suponha que uma oferta de trabalho chegue a
+empresa e serios erros acontecam quando da estimativa
+do custo dessa oferta. Qual a probabilidade de
+cada um dos dois engenheiros terem realizado o
+trabalho?
+"""
+
+"""
+37.) Se uma pessoa gasta exatamente um minuto para
+escrever cada anagrama da palavra ESTATISTICA
+(desconsidere o acento), quanto tempo levara para
+escrever todos, se nao deve parar nenhum instante
+para descansar?
+"""
+# Acredito que a questão tem problema e na resolução manual do professor
+# não está levando em consideração os repetidos, o código abaixo não repete anagramas
+def anagrama(palavra):
+
+    # se já cheogou no final da palavra
+    if len(palavra) <= 1:
+        return {palavra}
+
+    # dicionario para armazenar os valores 
+    anagramas = set()
+
+    # recursao para montar o anagrama
+    for i, letraFixa in enumerate(palavra):
+        # lógica de chamada de recursao
+        # sequencia[início:fim:passo], ou seja, pega tudo até i
+        # e pega tudo que está depois de i e concatene
+        sobra = palavra[:i] + palavra[i+1:]
+        anagramasDaSobra = anagrama(sobra)
+
+        # a medida que for retornando, irá adicionar na lista 
+        for j in anagramasDaSobra:
+            anagramas.add(letraFixa + j)
+
+    return anagramas
+            
+
+print(len(anagrama("ESTATISTICA")))
