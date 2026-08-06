@@ -1,3 +1,1 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\projeto.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\projeto.dir/objects.a @CMakeFiles\projeto.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe -Wl,--whole-archive CMakeFiles\projeto.dir/objects.a -Wl,--no-whole-archive -o projeto.exe -Wl,--out-implib,libprojeto.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\projeto.dir\linkLibs.rsp
+/usr/bin/cc CMakeFiles/projeto.dir/main.c.o CMakeFiles/projeto.dir/questoes/q37.c.o -o projeto 
