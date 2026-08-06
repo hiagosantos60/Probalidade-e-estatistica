@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "../include/questoes.h"
 
 // faz a troca via ponteiro direto na memória

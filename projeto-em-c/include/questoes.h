@@ -1,10 +1,14 @@
 #ifndef QUESTOES_H
 #define QUESTOES_H
 
-// questao 37
-void gerar_anagramas(char *palavra, int posicao_atual, int ultima_posicao,
-                     long long *contador);
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
-// questao 38
+// questao 37
+void gerar_anagramas(char *palavra, int posicao_atual, int ultima_posicao, long long *contador);
+
+// questao 81
+void pastelaria(double* probabilidade);
 
 #endif

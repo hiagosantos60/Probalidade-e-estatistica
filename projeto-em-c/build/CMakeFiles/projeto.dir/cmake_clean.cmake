@@ -1,9 +1,13 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/projeto.dir/main.c.o"
-  "CMakeFiles/projeto.dir/main.c.o.d"
-  "CMakeFiles/projeto.dir/questoes/q37.c.o"
-  "CMakeFiles/projeto.dir/questoes/q37.c.o.d"
-  "projeto"
+  "CMakeFiles/projeto.dir/main.c.obj"
+  "CMakeFiles/projeto.dir/main.c.obj.d"
+  "CMakeFiles/projeto.dir/questoes/q37.c.obj"
+  "CMakeFiles/projeto.dir/questoes/q37.c.obj.d"
+  "CMakeFiles/projeto.dir/questoes/q81.c.obj"
+  "CMakeFiles/projeto.dir/questoes/q81.c.obj.d"
+  "libprojeto.dll.a"
+  "projeto.exe"
+  "projeto.exe.manifest"
   "projeto.pdb"
 )
 
