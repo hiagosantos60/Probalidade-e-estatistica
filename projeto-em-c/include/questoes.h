@@ -16,4 +16,10 @@ void pastelaria(double *probabilidade);
 // questao 147
 void teste_caixas(double *probabilidade);
 
+// questão 224
+void alergicos(double* probA, double* probB);
+
+// questao 236
+void engenheiros(double* probA, double* probB);
+
 #endif
